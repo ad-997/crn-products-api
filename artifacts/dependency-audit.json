@@ -1,0 +1,615 @@
+{
+  "source": "https://api.nuget.org/v3/vulnerabilities/index.json",
+  "feedUpdated": [
+    "2026-10-06T23:47:38.9099889Z",
+    "2026-10-06T23:47:38.9099889Z"
+  ],
+  "packagesChecked": 151,
+  "findings": [],
+  "packages": [
+    {
+      "name": "Asp.Versioning.Abstractions",
+      "version": "8.1.0"
+    },
+    {
+      "name": "Asp.Versioning.Http",
+      "version": "8.1.1"
+    },
+    {
+      "name": "Asp.Versioning.Mvc",
+      "version": "8.1.1"
+    },
+    {
+      "name": "Asp.Versioning.Mvc.ApiExplorer",
+      "version": "8.1.1"
+    },
+    {
+      "name": "Azure.Core",
+      "version": "1.38.0"
+    },
+    {
+      "name": "Azure.Identity",
+      "version": "1.11.4"
+    },
+    {
+      "name": "Castle.Core",
+      "version": "5.1.1"
+    },
+    {
+      "name": "FluentValidation",
+      "version": "11.11.0"
+    },
+    {
+      "name": "FluentValidation.DependencyInjectionExtensions",
+      "version": "11.11.0"
+    },
+    {
+      "name": "Humanizer.Core",
+      "version": "2.14.1"
+    },
+    {
+      "name": "Microsoft.AspNetCore.Authentication.JwtBearer",
+      "version": "8.0.28"
+    },
+    {
+      "name": "Microsoft.AspNetCore.Cryptography.Internal",
+      "version": "8.0.28"
+    },
+    {
+      "name": "Microsoft.AspNetCore.Cryptography.KeyDerivation",
+      "version": "8.0.28"
+    },
+    {
+      "name": "Microsoft.AspNetCore.Mvc.Testing",
+      "version": "8.0.28"
+    },
+    {
+      "name": "Microsoft.AspNetCore.TestHost",
+      "version": "8.0.28"
+    },
+    {
+      "name": "Microsoft.Bcl.AsyncInterfaces",
+      "version": "1.1.1"
+    },
+    {
+      "name": "Microsoft.Bcl.AsyncInterfaces",
+      "version": "6.0.0"
+    },
+    {
+      "name": "Microsoft.CodeAnalysis.Analyzers",
+      "version": "3.3.3"
+    },
+    {
+      "name": "Microsoft.CodeAnalysis.CSharp",
+      "version": "4.5.0"
+    },
+    {
+      "name": "Microsoft.CodeAnalysis.CSharp.Workspaces",
+      "version": "4.5.0"
+    },
+    {
+      "name": "Microsoft.CodeAnalysis.Common",
+      "version": "4.5.0"
+    },
+    {
+      "name": "Microsoft.CodeAnalysis.Workspaces.Common",
+      "version": "4.5.0"
+    },
+    {
+      "name": "Microsoft.CodeCoverage",
+      "version": "17.12.0"
+    },
+    {
+      "name": "Microsoft.Data.SqlClient",
+      "version": "5.1.7"
+    },
+    {
+      "name": "Microsoft.Data.SqlClient.SNI.runtime",
+      "version": "5.1.2"
+    },
+    {
+      "name": "Microsoft.Data.Sqlite.Core",
+      "version": "8.0.28"
+    },
+    {
+      "name": "Microsoft.EntityFrameworkCore",
+      "version": "8.0.28"
+    },
+    {
+      "name": "Microsoft.EntityFrameworkCore.Abstractions",
+      "version": "8.0.28"
+    },
+    {
+      "name": "Microsoft.EntityFrameworkCore.Analyzers",
+      "version": "8.0.28"
+    },
+    {
+      "name": "Microsoft.EntityFrameworkCore.Design",
+      "version": "8.0.28"
+    },
+    {
+      "name": "Microsoft.EntityFrameworkCore.Relational",
+      "version": "8.0.28"
+    },
+    {
+      "name": "Microsoft.EntityFrameworkCore.SqlServer",
+      "version": "8.0.28"
+    },
+    {
+      "name": "Microsoft.EntityFrameworkCore.Sqlite",
+      "version": "8.0.28"
+    },
+    {
+      "name": "Microsoft.EntityFrameworkCore.Sqlite.Core",
+      "version": "8.0.28"
+    },
+    {
+      "name": "Microsoft.Extensions.ApiDescription.Server",
+      "version": "6.0.5"
+    },
+    {
+      "name": "Microsoft.Extensions.Caching.Abstractions",
+      "version": "8.0.0"
+    },
+    {
+      "name": "Microsoft.Extensions.Caching.Memory",
+      "version": "8.0.1"
+    },
+    {
+      "name": "Microsoft.Extensions.Configuration",
+      "version": "8.0.0"
+    },
+    {
+      "name": "Microsoft.Extensions.Configuration.Abstractions",
+      "version": "8.0.0"
+    },
+    {
+      "name": "Microsoft.Extensions.Configuration.Binder",
+      "version": "8.0.0"
+    },
+    {
+      "name": "Microsoft.Extensions.Configuration.Binder",
+      "version": "8.0.2"
+    },
+    {
+      "name": "Microsoft.Extensions.Configuration.CommandLine",
+      "version": "8.0.0"
+    },
+    {
+      "name": "Microsoft.Extensions.Configuration.EnvironmentVariables",
+      "version": "8.0.0"
+    },
+    {
+      "name": "Microsoft.Extensions.Configuration.FileExtensions",
+      "version": "8.0.1"
+    },
+    {
+      "name": "Microsoft.Extensions.Configuration.Json",
+      "version": "8.0.1"
+    },
+    {
+      "name": "Microsoft.Extensions.Configuration.UserSecrets",
+      "version": "8.0.1"
+    },
+    {
+      "name": "Microsoft.Extensions.DependencyInjection",
+      "version": "8.0.1"
+    },
+    {
+      "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "version": "2.1.0"
+    },
+    {
+      "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "version": "8.0.2"
+    },
+    {
+      "name": "Microsoft.Extensions.DependencyModel",
+      "version": "8.0.2"
+    },
+    {
+      "name": "Microsoft.Extensions.Diagnostics",
+      "version": "8.0.1"
+    },
+    {
+      "name": "Microsoft.Extensions.Diagnostics.Abstractions",
+      "version": "8.0.0"
+    },
+    {
+      "name": "Microsoft.Extensions.Diagnostics.Abstractions",
+      "version": "8.0.1"
+    },
+    {
+      "name": "Microsoft.Extensions.FileProviders.Abstractions",
+      "version": "8.0.0"
+    },
+    {
+      "name": "Microsoft.Extensions.FileProviders.Physical",
+      "version": "8.0.0"
+    },
+    {
+      "name": "Microsoft.Extensions.FileSystemGlobbing",
+      "version": "8.0.0"
+    },
+    {
+      "name": "Microsoft.Extensions.Hosting",
+      "version": "8.0.1"
+    },
+    {
+      "name": "Microsoft.Extensions.Hosting.Abstractions",
+      "version": "8.0.0"
+    },
+    {
+      "name": "Microsoft.Extensions.Hosting.Abstractions",
+      "version": "8.0.1"
+    },
+    {
+      "name": "Microsoft.Extensions.Identity.Core",
+      "version": "8.0.28"
+    },
+    {
+      "name": "Microsoft.Extensions.Logging",
+      "version": "8.0.1"
+    },
+    {
+      "name": "Microsoft.Extensions.Logging.Abstractions",
+      "version": "8.0.2"
+    },
+    {
+      "name": "Microsoft.Extensions.Logging.Configuration",
+      "version": "8.0.1"
+    },
+    {
+      "name": "Microsoft.Extensions.Logging.Console",
+      "version": "8.0.1"
+    },
+    {
+      "name": "Microsoft.Extensions.Logging.Debug",
+      "version": "8.0.1"
+    },
+    {
+      "name": "Microsoft.Extensions.Logging.EventLog",
+      "version": "8.0.1"
+    },
+    {
+      "name": "Microsoft.Extensions.Logging.EventSource",
+      "version": "8.0.1"
+    },
+    {
+      "name": "Microsoft.Extensions.Options",
+      "version": "8.0.2"
+    },
+    {
+      "name": "Microsoft.Extensions.Options.ConfigurationExtensions",
+      "version": "8.0.0"
+    },
+    {
+      "name": "Microsoft.Extensions.Primitives",
+      "version": "8.0.0"
+    },
+    {
+      "name": "Microsoft.Identity.Client",
+      "version": "4.61.3"
+    },
+    {
+      "name": "Microsoft.Identity.Client.Extensions.Msal",
+      "version": "4.61.3"
+    },
+    {
+      "name": "Microsoft.IdentityModel.Abstractions",
+      "version": "8.14.0"
+    },
+    {
+      "name": "Microsoft.IdentityModel.JsonWebTokens",
+      "version": "8.14.0"
+    },
+    {
+      "name": "Microsoft.IdentityModel.Logging",
+      "version": "8.14.0"
+    },
+    {
+      "name": "Microsoft.IdentityModel.Protocols",
+      "version": "6.35.0"
+    },
+    {
+      "name": "Microsoft.IdentityModel.Protocols",
+      "version": "7.1.2"
+    },
+    {
+      "name": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+      "version": "6.35.0"
+    },
+    {
+      "name": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+      "version": "7.1.2"
+    },
+    {
+      "name": "Microsoft.IdentityModel.Tokens",
+      "version": "8.14.0"
+    },
+    {
+      "name": "Microsoft.NET.Test.Sdk",
+      "version": "17.12.0"
+    },
+    {
+      "name": "Microsoft.OpenApi",
+      "version": "1.6.14"
+    },
+    {
+      "name": "Microsoft.SqlServer.Server",
+      "version": "1.0.0"
+    },
+    {
+      "name": "Microsoft.TestPlatform.ObjectModel",
+      "version": "17.12.0"
+    },
+    {
+      "name": "Microsoft.TestPlatform.TestHost",
+      "version": "17.12.0"
+    },
+    {
+      "name": "Microsoft.Win32.SystemEvents",
+      "version": "6.0.0"
+    },
+    {
+      "name": "Mono.TextTemplating",
+      "version": "2.2.1"
+    },
+    {
+      "name": "Moq",
+      "version": "4.20.72"
+    },
+    {
+      "name": "Newtonsoft.Json",
+      "version": "13.0.1"
+    },
+    {
+      "name": "SQLitePCLRaw.bundle_e_sqlite3",
+      "version": "3.0.3"
+    },
+    {
+      "name": "SQLitePCLRaw.config.e_sqlite3",
+      "version": "3.0.3"
+    },
+    {
+      "name": "SQLitePCLRaw.core",
+      "version": "3.0.3"
+    },
+    {
+      "name": "SQLitePCLRaw.provider.e_sqlite3",
+      "version": "3.0.3"
+    },
+    {
+      "name": "Serilog",
+      "version": "3.1.1"
+    },
+    {
+      "name": "Serilog.AspNetCore",
+      "version": "8.0.3"
+    },
+    {
+      "name": "Serilog.Extensions.Hosting",
+      "version": "8.0.0"
+    },
+    {
+      "name": "Serilog.Extensions.Logging",
+      "version": "8.0.0"
+    },
+    {
+      "name": "Serilog.Formatting.Compact",
+      "version": "2.0.0"
+    },
+    {
+      "name": "Serilog.Settings.Configuration",
+      "version": "8.0.4"
+    },
+    {
+      "name": "Serilog.Sinks.Console",
+      "version": "5.0.0"
+    },
+    {
+      "name": "Serilog.Sinks.Debug",
+      "version": "2.0.0"
+    },
+    {
+      "name": "Serilog.Sinks.File",
+      "version": "5.0.0"
+    },
+    {
+      "name": "SourceGear.sqlite3",
+      "version": "3.50.4.5"
+    },
+    {
+      "name": "Swashbuckle.AspNetCore",
+      "version": "6.9.0"
+    },
+    {
+      "name": "Swashbuckle.AspNetCore.Swagger",
+      "version": "6.9.0"
+    },
+    {
+      "name": "Swashbuckle.AspNetCore.SwaggerGen",
+      "version": "6.9.0"
+    },
+    {
+      "name": "Swashbuckle.AspNetCore.SwaggerUI",
+      "version": "6.9.0"
+    },
+    {
+      "name": "System.ClientModel",
+      "version": "1.0.0"
+    },
+    {
+      "name": "System.CodeDom",
+      "version": "4.4.0"
+    },
+    {
+      "name": "System.Collections.Immutable",
+      "version": "6.0.0"
+    },
+    {
+      "name": "System.Composition",
+      "version": "6.0.0"
+    },
+    {
+      "name": "System.Composition.AttributedModel",
+      "version": "6.0.0"
+    },
+    {
+      "name": "System.Composition.Convention",
+      "version": "6.0.0"
+    },
+    {
+      "name": "System.Composition.Hosting",
+      "version": "6.0.0"
+    },
+    {
+      "name": "System.Composition.Runtime",
+      "version": "6.0.0"
+    },
+    {
+      "name": "System.Composition.TypedParts",
+      "version": "6.0.0"
+    },
+    {
+      "name": "System.Configuration.ConfigurationManager",
+      "version": "6.0.1"
+    },
+    {
+      "name": "System.Diagnostics.DiagnosticSource",
+      "version": "6.0.1"
+    },
+    {
+      "name": "System.Diagnostics.DiagnosticSource",
+      "version": "8.0.0"
+    },
+    {
+      "name": "System.Diagnostics.EventLog",
+      "version": "8.0.1"
+    },
+    {
+      "name": "System.Drawing.Common",
+      "version": "6.0.0"
+    },
+    {
+      "name": "System.Formats.Asn1",
+      "version": "8.0.2"
+    },
+    {
+      "name": "System.IO.Pipelines",
+      "version": "6.0.3"
+    },
+    {
+      "name": "System.IO.Pipelines",
+      "version": "8.0.0"
+    },
+    {
+      "name": "System.IdentityModel.Tokens.Jwt",
+      "version": "8.14.0"
+    },
+    {
+      "name": "System.Memory",
+      "version": "4.5.4"
+    },
+    {
+      "name": "System.Memory.Data",
+      "version": "1.0.2"
+    },
+    {
+      "name": "System.Numerics.Vectors",
+      "version": "4.5.0"
+    },
+    {
+      "name": "System.Reflection.Metadata",
+      "version": "1.6.0"
+    },
+    {
+      "name": "System.Reflection.Metadata",
+      "version": "6.0.1"
+    },
+    {
+      "name": "System.Runtime.Caching",
+      "version": "6.0.0"
+    },
+    {
+      "name": "System.Runtime.CompilerServices.Unsafe",
+      "version": "6.0.0"
+    },
+    {
+      "name": "System.Security.AccessControl",
+      "version": "6.0.0"
+    },
+    {
+      "name": "System.Security.Cryptography.Cng",
+      "version": "5.0.0"
+    },
+    {
+      "name": "System.Security.Cryptography.ProtectedData",
+      "version": "6.0.0"
+    },
+    {
+      "name": "System.Security.Permissions",
+      "version": "6.0.0"
+    },
+    {
+      "name": "System.Security.Principal.Windows",
+      "version": "5.0.0"
+    },
+    {
+      "name": "System.Text.Encoding.CodePages",
+      "version": "6.0.0"
+    },
+    {
+      "name": "System.Text.Encodings.Web",
+      "version": "6.0.1"
+    },
+    {
+      "name": "System.Text.Json",
+      "version": "4.7.2"
+    },
+    {
+      "name": "System.Threading.Channels",
+      "version": "6.0.0"
+    },
+    {
+      "name": "System.Threading.Tasks.Extensions",
+      "version": "4.5.4"
+    },
+    {
+      "name": "System.Windows.Extensions",
+      "version": "6.0.0"
+    },
+    {
+      "name": "xunit",
+      "version": "2.9.2"
+    },
+    {
+      "name": "xunit.abstractions",
+      "version": "2.0.3"
+    },
+    {
+      "name": "xunit.analyzers",
+      "version": "1.16.0"
+    },
+    {
+      "name": "xunit.assert",
+      "version": "2.9.2"
+    },
+    {
+      "name": "xunit.core",
+      "version": "2.9.2"
+    },
+    {
+      "name": "xunit.extensibility.core",
+      "version": "2.9.2"
+    },
+    {
+      "name": "xunit.extensibility.execution",
+      "version": "2.9.2"
+    },
+    {
+      "name": "xunit.runner.visualstudio",
+      "version": "2.8.2"
+    }
+  ]
+}

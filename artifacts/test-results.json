@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-07",
+  "framework": ".NET 8",
+  "total": 14,
+  "passed": 14,
+  "failed": 0,
+  "skipped": 0,
+  "tests": [
+    {
+      "name": "Assessment.Tests.ApiTests.ValidationAndMalformedJson_ReturnProblemDetails",
+      "outcome": "Passed"
+    },
+    {
+      "name": "Assessment.Tests.UnitTests.InvalidName_DoesNotWrite(name: \"\")",
+      "outcome": "Passed"
+    },
+    {
+      "name": "Assessment.Tests.UnitTests.Update_SetsModifiedAudit",
+      "outcome": "Passed"
+    },
+    {
+      "name": "Assessment.Tests.ApiTests.ProductAndItemLifecycle",
+      "outcome": "Passed"
+    },
+    {
+      "name": "Assessment.Tests.ApiTests.AuthenticationAndRoleBoundaries",
+      "outcome": "Passed"
+    },
+    {
+      "name": "Assessment.Tests.UnitTests.InvalidPagination_Rejected(page: 0, size: 20)",
+      "outcome": "Passed"
+    },
+    {
+      "name": "Assessment.Tests.UnitTests.InvalidPagination_Rejected(page: 1, size: 101)",
+      "outcome": "Passed"
+    },
+    {
+      "name": "Assessment.Tests.UnitTests.InvalidPagination_Rejected(page: -1, size: 20)",
+      "outcome": "Passed"
+    },
+    {
+      "name": "Assessment.Tests.UnitTests.InvalidName_DoesNotWrite(name: \"   \")",
+      "outcome": "Passed"
+    },
+    {
+      "name": "Assessment.Tests.UnitTests.Create_UsesActorAndUtcAudit",
+      "outcome": "Passed"
+    },
+    {
+      "name": "Assessment.Tests.UnitTests.MissingProduct_ThrowsNotFound",
+      "outcome": "Passed"
+    },
+    {
+      "name": "Assessment.Tests.ApiTests.RevokeAndInvalidCredentials",
+      "outcome": "Passed"
+    },
+    {
+      "name": "Assessment.Tests.ApiTests.RefreshRotation_RejectsReplayAndRevokesFamily",
+      "outcome": "Passed"
+    },
+    {
+      "name": "Assessment.Tests.UnitTests.NegativeQuantity_Rejected",
+      "outcome": "Passed"
+    }
+  ]
+}
