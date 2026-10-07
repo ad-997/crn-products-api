@@ -43,6 +43,8 @@ Startup initialization applies the included EF migrations and creates the demo u
 1. Log in through `POST /api/v1/auth/login` using `admin` or `reader` and the password you configured.
 2. Copy the access token into Swagger's **Authorize** box.
 3. Use the Products and Items endpoints. Admin can create, update, and delete; Reader can view.
+4. When the access token expires, send the refresh token to `/api/v1/auth/refresh` and save the new token pair.
+5. To log out, send the refresh token to `/api/v1/auth/revoke`. Existing access tokens remain valid until expiry.
 
 Product CRUD is available at `/api/v1/products`. Related Items use `/api/v1/products/{id}/items`. List endpoints support `pageNumber` and `pageSize`. Refresh and logout use `/api/v1/auth/refresh` and `/api/v1/auth/revoke`. Swagger documents all endpoints and request models.
 
@@ -54,7 +56,18 @@ dotnet test CrnAssessment.sln
 
 All 14 tests passed locally, and the GitHub build and test workflow passed. See [validation details](VALIDATION.md) for the verification scope, including Docker limitations.
 
-The Compose setup is intended for local use. Deployment requires HTTPS, secure secret storage, and reviewed database migrations.
+## Documentation
+
+Swagger UI: `/swagger`. OpenAPI JSON: `/swagger/v1/swagger.json` (Development only). Controller actions have C# XML summary comments that appear in Swagger. This C# project uses XML documentation comments in place of JavaScript's JSDoc.
+
+## Deployment
+
+The Compose setup is intended for local use. For deployment:
+
+1. Configure SQL Server and supply credentials and the JWT key through secure configuration.
+2. Apply the reviewed migration script in `artifacts/migrations.sql` and provision users before starting the API.
+3. Build the Docker image with `docker build -t crn-products-api .` and run it with `ASPNETCORE_ENVIRONMENT=Production` and `Database__Initialize=false`.
+4. Configure HTTPS, trusted proxy settings if applicable, database backups, and log collection. Swagger is disabled in Production.
 
 ## Local screenshot
 
