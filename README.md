@@ -46,7 +46,48 @@ Startup initialization applies the included EF migrations and creates the demo u
 4. When the access token expires, send the refresh token to `/api/v1/auth/refresh` and save the new token pair.
 5. To log out, send the refresh token to `/api/v1/auth/revoke`. Existing access tokens remain valid until expiry.
 
-Product CRUD is available at `/api/v1/products`. Related Items use `/api/v1/products/{id}/items`. List endpoints support `pageNumber` and `pageSize`. Refresh and logout use `/api/v1/auth/refresh` and `/api/v1/auth/revoke`. Swagger documents all endpoints and request models.
+## Endpoints
+
+Base URL: `http://localhost:5080`. Protected endpoints require `Authorization: Bearer <accessToken>`. Read endpoints accept Admin or Reader; writes require Admin. IDs must be positive integers.
+
+| Method | Path | Purpose | Access | Success |
+|---|---|---|---|---|
+| POST | `/api/v1/auth/login` | Verify username and password | Public | 200: token pair |
+| POST | `/api/v1/auth/refresh` | Rotate refresh token | Public; valid refresh token required | 200: new token pair |
+| POST | `/api/v1/auth/revoke` | Revoke refresh token family | Public; refresh token required | 204: no body |
+| GET | `/api/v1/products` | List products | Admin / Reader | 200: paginated products |
+| GET | `/api/v1/products/{id}` | Get one product | Admin / Reader | 200: product |
+| POST | `/api/v1/products` | Create product | Admin | 201: product and Location header |
+| PUT | `/api/v1/products/{id}` | Update product name | Admin | 204: no body |
+| DELETE | `/api/v1/products/{id}` | Delete product and its Items | Admin | 204: no body |
+| GET | `/api/v1/products/{id}/items` | List a product's Items | Admin / Reader | 200: paginated Items |
+| POST | `/api/v1/products/{id}/items` | Add Item to product | Admin | 201: Item and Location header |
+| PUT | `/api/v1/products/{id}/items/{itemId}` | Update Item quantity | Admin | 204: no body |
+| DELETE | `/api/v1/products/{id}/items/{itemId}` | Delete Item | Admin | 204: no body |
+| GET | `/health` | Check process liveness; does not check SQL | Public | 200: `{"status":"healthy"}` |
+
+### Request bodies
+
+Use `Content-Type: application/json` for requests with a body.
+
+| Endpoint | Example body |
+|---|---|
+| Login | `{"username":"admin","password":"YOUR_PASSWORD"}` |
+| Refresh / revoke | `{"refreshToken":"YOUR_REFRESH_TOKEN"}` |
+| Create / update Product | `{"productName":"Keyboard"}` |
+| Create / update Item | `{"quantity":10}` |
+
+Product names are required and limited to 255 characters. Quantity must be a nonnegative integer. Audit fields are set by the server.
+
+### Responses and pagination
+
+Product responses contain `id`, `productName`, `createdBy`, `createdOn`, `modifiedBy`, and `modifiedOn`. Item responses contain `id`, `productId`, and `quantity`. Token responses contain `accessToken`, `refreshToken`, and `accessTokenExpiresAt`.
+
+Both list endpoints accept `?pageNumber=1&pageSize=20` (defaults). Page size is 1–100; page number is 1–1,000,000. Results contain `data`, `pageNumber`, `pageSize`, and `totalCount`.
+
+### Errors
+
+Errors use Problem Details JSON: 400 for invalid input, 401 for missing/invalid authentication or invalid login/refresh, 403 for insufficient permission, 404 for unknown resources, 409 for database conflicts, 429 for authentication rate limits, and 500 for unexpected errors. Swagger provides the interactive endpoint documentation and models.
 
 ## Tests
 
