@@ -1,0 +1,11 @@
+**/bin
+**/obj
+.git
+.env
+TestResults
+
+.env.*
+!.env.example
+TestResults
+**/TestResults
+*.zip

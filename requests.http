@@ -1,0 +1,33 @@
+@base = http://localhost:5080
+@accessToken = PASTE_ACCESS_TOKEN_HERE
+@refreshToken = PASTE_REFRESH_TOKEN_HERE
+
+### Login (replace password; do not commit real credentials)
+POST {{base}}/api/v1/auth/login
+Content-Type: application/json
+
+{"username":"admin","password":"REPLACE_LOCALLY"}
+
+### Create a product
+POST {{base}}/api/v1/products
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{"productName":"Keyboard"}
+
+### List products
+GET {{base}}/api/v1/products?pageNumber=1&pageSize=20
+Authorization: Bearer {{accessToken}}
+
+### Add an item (replace product id if needed)
+POST {{base}}/api/v1/products/1/items
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{"quantity":10}
+
+### Refresh: use returned refresh token on the next call
+POST {{base}}/api/v1/auth/refresh
+Content-Type: application/json
+
+{"refreshToken":"{{refreshToken}}"}

@@ -1,0 +1,25 @@
+**/bin/
+**/obj/
+.env
+*.db
+*.db-shm
+*.db-wal
+TestResults/
+.vs/
+.DS_Store
+
+# Local configuration and editor files
+.env.*
+!.env.example
+*.user
+*.suo
+.vscode/
+.idea/
+*.log
+*.zip
+
+# Personal study and submission notes
+docs/COMPLETE-STUDY-GUIDE.md
+docs/INTERVIEW.md
+docs/WALKTHROUGH.md
+docs/SUBMISSION.md
